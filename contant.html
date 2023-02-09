@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Project</title>
+    <meta name="description" content="This is an ecommerce project for myself">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- nevbar start here -->
+    <i class="fas fa-bars fa-2x" id="btn1"></i>
+    <nav class="hidden" id="menu">
+        <ul class="nev-upper flex-space-around">
+            <li class="nev_list">
+                <a href="index.html" class="nev_link">Home</a>
+            </li>
+            <li class="nev_list">
+                <a href="Register.html" class="nev_link">Register</a>
+            </li>
+            <li class="nev_list">
+                <a href="login.html" class="nev_link">Login</a>
+            </li>
+            <li class="nev_list">
+                <a href="index.html" class="nev_link">Login Out</a>
+            </li>
+            <li class="nev_list">
+                <a href="contant.html" class="nev_link">Contant</a>
+            </li>
+            <li class="nev_list">
+                <a href="profile.html" class="nev_link">
+                    <img class="profile_icon" src="img/profile.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+        <ul class="nev-lower flex-space-around">
+            <li class="nev_list">
+                <a href="index.html" class="nev_link nev-barnd">Siyem Express</a>
+            </li>
+            <li class="nev_list">
+                <a href="cart.html" class="nev_link">
+                    <span>
+                        <i class="fa-solid
+                        fa-cart-shopping"></i>Cart 2 Products - $124.40
+                    </span>
+                </a>
+            </li>
+        </ul>
+
+
+    </nav>
+    <!-- nevbar start here -->
+    <main>
+        <section class="contant-section">
+            <h2 class="secton_tittle text-center">
+                Contant us
+            </h2>
+            <div class="contant-conatiner flex-center">
+                <form action="" class="form card">
+                    <div class="form-control flex-center">
+                        <label for="name">Name</label>
+                        <input type="name" id="name" required autocomplete="name">
+                    </div>
+                    <div class="form-control flex-center">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required autocomplete="email">
+                    </div>
+                    <div class="form-control flex-center">
+                        <label for="massage">Massage</label>
+                        <textarea name="massage" id="massage"></textarea>
+                    </div>
+                    <div class="form-control flex-center form_button-filed">
+                        <button type="submit" class="btn contact-btn">Submit</button>
+                    </div>
+                </form>
+                <div class="contant_address flex-space-around">
+                    <address>
+                        <h4>Address :</h4>
+                        <p>123 high street</p>
+                        <p>Tampere, Finland</p>
+                        <br><span>Cal :</span>
+                        <a href="tel;=8801641311145">+8801641311145
+                        </a>
+                    </address>
+                    <iframe class="contant_map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100132.89963139979!2d91.0521579853113!3d23.538874309644566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37547a4806405153%3A0x38ba553dd278304!2sBurichang%20Upazila!5e1!3m2!1sen!2sbd!4v1675959517097!5m2!1sen!2sbd"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer starts here -->
+    <footer class="flex-space-around">
+        <div class="flex-space-around">
+            <label for="Subscribe">Subscribe To Newsletter :</label>
+            <input type="email" id="subscribe" name="subscribe" class="footer_input" placeholder="Your Email address">
+            <button class="btn btn_subscribe">subscribe</button>
+        </div>
+        <div>
+            <p>&copy;Copyright 2023 Siyem Express. All rights rserved</p>
+        </div>
+
+    </footer>
+    <!-- footer starts here -->
+    <script>
+        var btn1 = document.getElementById("btn1");
+        var menu = document.getElementById("menu");
+        btn1.addEventListener('click', function () {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>

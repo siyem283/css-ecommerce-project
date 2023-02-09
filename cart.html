@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Project</title>
+    <meta name="description" content="This is an ecommerce project for myself">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- nevbar start here -->
+    <i class="fas fa-bars fa-2x" id="btn1"></i>
+    <nav class="hidden" id="menu">
+        <ul class="nev-upper flex-space-around">
+            <li class="nev_list">
+                <a href="index.html" class="nev_link">Home</a>
+            </li>
+            <li class="nev_list">
+                <a href="Register.html" class="nev_link">Register</a>
+            </li>
+            <li class="nev_list">
+                <a href="login.html" class="nev_link">Login</a>
+            </li>
+            <li class="nev_list">
+                <a href="index.html" class="nev_link">Login Out</a>
+            </li>
+            <li class="nev_list">
+                <a href="contant.html" class="nev_link">Contant</a>
+            </li>
+            <li class="nev_list">
+                <a href="profile.html" class="nev_link">
+                    <img class="profile_icon" src="img/profile.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+        <ul class="nev-lower flex-space-around">
+            <li class="nev_list">
+                <a href="index.html" class="nev_link nev-barnd">Siyem Express</a>
+            </li>
+            <li class="nev_list">
+                <a href="cart.html" class="nev_link">
+                    <span>
+                        <i class="fa-solid
+                        fa-cart-shopping"></i>Cart 2 Products - $124.40
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- nevbar start here -->
+    <main>
+        <div class="cart flex-center">
+            <div class="cart_items">
+                <div class="cart_items-heading card">
+                    <h2>Shopping Cart [2 items]</h2>
+                    <div class="cart_items-acation">
+                        <label for="select">
+                            <input type="checkbox" name="select" id="select">select all items
+                        </label>
+                        <button class="btn">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                        <button class="btn">Shop More</button>
+                    </div>
+                </div>
+                <div class="cart_items card flex-space-around">
+                    <input type="checkbox" name="select" id="select">
+                    <img src="img/headphone.jpeg" alt="" class="cart-items-img">
+                    <div class="cart_items-descripation">
+                        <h3 class="product_name">
+                            Sony V-4 Headphone
+                        </h3>
+                        <h4 class="produc_price">Price:$255.99</h4>
+                        <p class="cart_items-shipping">Free Shipping</p>
+                    </div>
+                    <div class="cart_items-acations">
+                        <button class="btn">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                        <div>
+                            <button class="btn">
+                                <i class="fas fa-add"></i>
+                            </button>
+                            <span>3</span>
+                            <button class="btn">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart_items card flex-space-around">
+                    <input type="checkbox" name="select" id="select">
+                    <img src="img/sunglass.jpg" alt="" class="cart-items-img">
+                    <div class="cart_items-descripation">
+                        <h3 class="product_name">
+                            Apple smart glass
+                        </h3>
+                        <h4 class="produc_price">Price:$115.99</h4>
+                        <p class="cart_items-shipping">Shipping cost$2.50</p>
+                    </div>
+                    <div class="cart_items-acations">
+                        <button class="btn">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                        <div>
+                            <button class="btn">
+                                <i class="fas fa-add"></i>
+                            </button>
+                            <span>3</span>
+                            <button class="btn">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_payment">
+                <div class="cart_payment_summary card">
+                    <h2>Payment Summary</h2>
+                    <div>
+                        <p>Subtotal : </p>
+                        <p>$341.44</p>
+                    </div>
+                    <div>
+                        <p>Shipping Cost</p>
+                        <p>$2.50</p>
+                    </div>
+                    <div>
+                        <p>Total Cost</p>
+                        <p>$344.38</p>
+                    </div>
+                    <button class="btn cart_payment-button">Pay Now</button>
+                </div>
+                <div class="cart_payment-methods card">
+                    <h2>Payment Methods</h2>
+                    <div>
+                        <i class="fa-brands fa-cc-visa fa-3x"></i>
+                        <i class="fa-brands fa-cc-apple-pay fa-3x"></i>
+                        <i class="fa-brands fa-cc-amex fa-3x"></i>
+                        <i class="fa-brands fa-cc-amazon-pay fa-3x"></i>
+                        <i class="fa-brands fa-cc-paypal fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!-- footer starts here -->
+    <footer class="flex-space-around">
+        <div class="flex-space-around">
+            <label for="Subscribe">Subscribe To Newsletter :</label>
+            <input type="email" id="subscribe" name="subscribe" class="footer_input" placeholder="Your Email address">
+            <button class="btn btn_subscribe">subscribe</button>
+        </div>
+        <div>
+            <p>&copy;Copyright 2023 Siyem Express. All rights rserved</p>
+        </div>
+
+    </footer>
+    <!-- footer starts here -->
+    <script>
+        var btn1 = document.getElementById("btn1");
+        var menu = document.getElementById("menu");
+        btn1.addEventListener('click', function () {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>

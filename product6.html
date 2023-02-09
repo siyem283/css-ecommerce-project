@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Project</title>
+    <meta name="description" content="This is an ecommerce project for myself">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- nevbar start here -->
+    <i class="fas fa-bars fa-2x" id="btn1"></i>
+    <nav class="hidden" id="menu">
+        <ul class="nev-upper flex-space-around">
+            <li class="nev_list">
+                <a href="index.html" class="nev_link">Home</a>
+            </li>
+            <li class="nev_list">
+                <a href="Register.html" class="nev_link">Register</a>
+            </li>
+            <li class="nev_list">
+                <a href="login.html" class="nev_link">Login</a>
+            </li>
+            <li class="nev_list">
+                <a href="index.html" class="nev_link">Login Out</a>
+            </li>
+            <li class="nev_list">
+                <a href="contant.html" class="nev_link">Contant</a>
+            </li>
+            <li class="nev_list">
+                <a href="profile.html" class="nev_link">
+                    <img class="profile_icon" src="img/profile.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+        <ul class="nev-lower flex-space-around">
+            <li class="nev_list">
+                <a href="index.html" class="nev_link nev-barnd">Siyem Express</a>
+            </li>
+            <li class="nev_list">
+                <a href="cart.html" class="nev_link">
+                    <span>
+                        <i class="fa-solid
+                        fa-cart-shopping"></i>Cart 2 Products - $124.40
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- nevbar start here -->
+    <main class="flex-center">
+        <div class="main-content">
+            <section class="product-details flex-center">
+                <div class="product_details-left flex-center">
+                    <img src="img/goo.jpeg" alt="">
+                </div>
+                <div class="product_details-right">
+                    <h3 class="product_name">Google Nest</h3>
+                    <p id="span_dot">
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </p>
+                    <p class="product_descripation">
+                        <strong>Description:</strong>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam ea accusamus neque rem deserunt
+                        sequi, recusandae aut dicta, velit harum necessitatibus voluptatum, quis earum debitis.
+                    </p>
+                    <p class="product_descripation">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid deserunt et ex in, odit ipsam
+                        nihil distinctio hic error, enim, delectus rem omnis sunt nisi quo voluptate aperiam! Corrupti
+                        quo, sequi magnam ut rerum vitae!
+                    </p>
+                    <p class="product_descripation">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid deserunt et ex in, odit ipsam
+                        nihil distinctio hic error, enim, delectus rem omnis sunt nisi quo voluptate aperiam! Corrupti
+                        quo, sequi magnam ut rerum vitae!
+                    </p>
+                    <h4 class="product_category">Category : Nest</h4>
+                    <h4 class="product_price">Price : $484.99</h4>
+                    <p class="product_rating">Rating : 4.7/5</p>
+                    <button class="btn product_butten">Add To Cart</button>
+                    <button class="btn product_butten"><a id="Back-btn" href="index.html">Back To Shopping</a></button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- footer starts here -->
+    <footer class="flex-space-around">
+        <div class="flex-space-around">
+            <label for="Subscribe">Subscribe To Newsletter :</label>
+            <input type="email" id="subscribe" name="subscribe" class="footer_input" placeholder="Your Email address">
+            <button class="btn btn_subscribe">subscribe</button>
+        </div>
+        <div>
+            <p>&copy;Copyright 2023 Siyem Express. All rights rserved</p>
+        </div>
+    </footer>
+    <!-- footer starts here -->
+    <script>
+        var btn1 = document.getElementById("btn1");
+        var menu = document.getElementById("menu");
+        btn1.addEventListener('click', function () {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>
